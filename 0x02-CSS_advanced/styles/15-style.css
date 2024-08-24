@@ -1,3 +1,8 @@
+/* Universal box-sizing rule */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 html {
   line-height: 1.15; /* 1 */
@@ -201,20 +206,20 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: var(--font-weight-bold);
 }
 
-a:link {
+a[href] {
   color: var(--text-color);
   text-decoration: none;
 }
 
-a:visited {
+a[href]:visited {
   font-style: italic;
 }
 
-a:hover {
+a[href]:hover {
   text-decoration: underline;
 }
 
-a:active {
+a[href]:active {
   background-color: var(--color-light-grey);
 }
 
